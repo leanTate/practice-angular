@@ -1,0 +1,58 @@
+.lol{
+  width: 10px;
+}
+.box{
+  height: 100px;
+  width: 100px;
+  overflow: auto;
+}
+
+.product-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.product-component{
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+
+.product-component:hover{
+  transform: translateY(-20px);
+  box-shadow: 7px 21px 29px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 7px 21px 29px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 21px 29px 0px rgba(0,0,0,0.75);
+}
+
+.product-img{
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 40em){
+  .product-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+}
+.message-error{
+  background-color: red;
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: all linear 0.25s;
+  &.active{
+    opacity: 1;
+  }
+}
