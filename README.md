@@ -1,2 +1,2 @@
 # Ang
-practice in angualr
+practice in angular
